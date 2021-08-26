@@ -4,7 +4,7 @@ class Cat:
         self.gender = gender
         self.age = age
 
-    def getName(self):# нужны ли нам эти функции?!
+    def getName(self):
         return self.name
 
     def getGender(self):
@@ -13,9 +13,9 @@ class Cat:
     def getAge(self):
         return self.age
 
-def pet_info(self):# не понимаю почему ругается?!
-    print(f'Имя питомца: {self.getName()}, Пол питомца: {self.getGender()}, Возраст: {self.getAge()}')
+    def pet_info(self):
+        return f'Имя питомца: {self.getName()}, Пол питомца: {self.getGender()}, Возраст: {self.getAge()}'
 
-fedor = Cat("Федор", "мальчик", 5) # тоже не понимаю почему ругается?!
-pet_info(fedor)
+fedor = Cat(name="Федор", gender="мальчик", age=5) # тоже не понимаю почему ругается?!
+print(fedor.pet_info())
 
